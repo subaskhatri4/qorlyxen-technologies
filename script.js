@@ -1,5 +1,5 @@
 // Only published projects are read here. Owner login and editing happen in Project Studio.
-const PROJECT_STUDIO = ''; // Filled with the verified live Studio address after publication.
+const PROJECT_STUDIO = 'https://qorlyxen-studio.floot.app';
 
 const menu = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#nav-links');
