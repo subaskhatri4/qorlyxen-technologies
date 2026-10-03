@@ -4,15 +4,15 @@ AI Growth & Automation Company · Kathmandu, Nepal
 
 - Public website: [Qorlyxen Technology](https://subaskhatri4.github.io/qorlyxen-technologies/)
 - Website source: [GitHub repository](https://github.com/subaskhatri4/qorlyxen-technologies)
-- Owner Studio: `__STUDIO_URL__` — replace this placeholder only after its published address is confirmed.
+- Owner Studio: [Qorlyxen Studio](https://qorlyxen-studio.floot.app/admin)
 
 ## Owner setup
 
-The public website runs on GitHub Pages. A separate Floot Studio provides Google login, content editing, project management and image storage. The Studio is awaiting publication and connection to the website. A successful owner login has not yet been verified.
+The public website runs on GitHub Pages. The published Floot Studio provides Google login, content editing, project management and image storage. The website reads saved content from the Studio's public content service. A successful owner login has not yet been verified.
 
-Once the Studio address is confirmed:
+First owner check:
 
-1. Open `__STUDIO_URL__/admin`, or use **Owner login** on the public website.
+1. Open [Owner Studio](https://qorlyxen-studio.floot.app/admin), or use **Owner login** on the public website.
 2. Choose Google sign-in and use **your owner Google account**. The server restricts editing to this account.
 3. Check that the editor opens, save one small change, and refresh the public website to confirm it appears.
 4. Sign out when finished. Visitors can view the website without signing in.
@@ -49,7 +49,7 @@ The content service allows browser requests from the public GitHub website and f
 
 ## Connect and publish updates
 
-After the Studio is published, set `PROJECT_STUDIO` in `script.js` to its verified HTTPS origin, without a trailing slash. Replace `__STUDIO_URL__` in this README with that same origin. The website reads `/_api/public/content` and links owner access to `/admin`.
+The Studio origin is `https://qorlyxen-studio.floot.app`. Keep `PROJECT_STUDIO` in `script.js` set to this HTTPS origin, without a trailing slash. The website reads `/_api/public/content` and links owner access to `/admin`.
 
 Commit updated website files to the GitHub repository's `main` branch. GitHub Pages serves the repository root. Local file changes alone do not update the public website.
 
@@ -65,4 +65,4 @@ Studio code changes must be published separately through Floot. Saved website te
 | `favicon.svg` | Website icon |
 | Floot Studio | Owner login, editor, database and image storage |
 
-Floot project ID: `2acbae73-eddc-49ba-affa-94f7a75594ae`. Its final public address remains unconfirmed. This package contains the public website files; the Studio is maintained separately.
+Floot project ID: `2acbae73-eddc-49ba-affa-94f7a75594ae`. Its verified production origin is `https://qorlyxen-studio.floot.app`. This package contains the public website files; the Studio is maintained separately.
